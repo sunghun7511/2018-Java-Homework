@@ -15,7 +15,7 @@ public class Homework_3_7 extends HomeworkClass {
     public final void run() {
         final Random r = new Random();
 
-        int[][] arr = new int[ARR_MAX][ARR_MAX];
+        final int[][] arr = new int[ARR_MAX][ARR_MAX];
 
         for(int i = 0 ; i < ARR_MAX ; i ++){
             for(int j = 0 ; j < ARR_MAX ; j ++){

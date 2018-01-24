@@ -19,7 +19,7 @@ public class Homework_4_5 extends HomeworkClass {
      */
 
     public final void run() {
-        int a = 10, b = 2;
+        final int a = 10, b = 2;
 
         CalculatorBase base = null;
 
@@ -48,14 +48,14 @@ public class Homework_4_5 extends HomeworkClass {
         protected int a;
         protected int b;
 
-        public abstract void setValue(int a, int b);
+        public abstract void setValue(final int a, final int b);
         public abstract int calculate();
     }
 
     public class Add extends CalculatorBase {
         public Add(){}
 
-        public final void setValue(int a, int b){
+        public final void setValue(final int a, final int b){
             this.a = a;
             this.b = b;
         }
@@ -68,7 +68,7 @@ public class Homework_4_5 extends HomeworkClass {
     public class Sub extends CalculatorBase {
         public Sub(){}
 
-        public final void setValue(int a, int b){
+        public final void setValue(final int a, final int b){
             this.a = a;
             this.b = b;
         }
@@ -81,7 +81,7 @@ public class Homework_4_5 extends HomeworkClass {
     public class Mul extends CalculatorBase {
         public Mul(){}
 
-        public final void setValue(int a, int b){
+        public final void setValue(final int a, final int b){
             this.a = a;
             this.b = b;
         }
@@ -94,7 +94,7 @@ public class Homework_4_5 extends HomeworkClass {
     public class Div extends CalculatorBase {
         public Div(){}
 
-        public final void setValue(int a, int b){
+        public final void setValue(final int a, final int b){
             this.a = a;
             this.b = b;
         }

@@ -59,7 +59,7 @@ public class Homework_4_1 extends HomeworkClass {
             this.create_year = create_year;
         }
 
-        public Song(String title, String artist, String album, int track, Date create_year, String... composers){
+        public Song(final String title, final String artist, final String album, final int track, final Date create_year, final String... composers){
             this.title = title;
             this.artist = artist;
             this.album = album;
