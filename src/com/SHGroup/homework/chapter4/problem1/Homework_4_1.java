@@ -76,7 +76,7 @@ public class Homework_4_1 extends HomeworkClass {
             }
         }
 
-        public void show(){
+        public final void show(){
             Vector<String> info = new Vector<>();
             info.add("=================");
             info.add("Track info");
