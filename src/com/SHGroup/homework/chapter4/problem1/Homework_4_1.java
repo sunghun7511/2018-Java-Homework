@@ -4,7 +4,6 @@ import com.SHGroup.homework.HomeworkClass;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Scanner;
 import java.util.Vector;
 
 public class Homework_4_1 extends HomeworkClass {
@@ -44,6 +43,21 @@ public class Homework_4_1 extends HomeworkClass {
         private final Vector<String> composer = new Vector<>();
 
         private final Date create_year;
+
+        public Song(){
+            this.title = "제목 없음";
+            this.artist = "가수 없음";
+            this.album = "앨범 없음";
+            this.track = 0;
+            Date create_year = null;
+            try{
+                create_year = dateFormat.parse("0000-00-00");
+            }catch(Exception ex){
+                ex.printStackTrace();
+                create_year = null;
+            }
+            this.create_year = create_year;
+        }
 
         public Song(String title, String artist, String album, int track, Date create_year, String... composers){
             this.title = title;
